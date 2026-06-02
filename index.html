@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>物时记 — 隐私政策</title>
+  <style>
+    :root { --text: #1c1c1e; --muted: #636366; --bg: #f2f2f7; --card: #fff; }
+    @media (prefers-color-scheme: dark) {
+      :root { --text: #f5f5f7; --muted: #aeaeb2; --bg: #000; --card: #1c1c1e; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--bg);
+      margin: 0;
+      padding: 24px 16px 48px;
+    }
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      background: var(--card);
+      padding: 28px 24px 36px;
+      border-radius: 16px;
+    }
+    h1 { font-size: 1.5rem; margin: 0 0 8px; }
+    .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 24px; }
+    h2 { font-size: 1.1rem; margin: 28px 0 10px; }
+    p, li { font-size: 1rem; }
+    ul { padding-left: 1.2em; }
+    a { color: #007aff; }
+    footer { margin-top: 32px; padding-top: 16px; border-top: 1px solid rgba(128,128,128,.25); font-size: 0.85rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>物时记 隐私政策</h1>
+    <p class="meta">最后更新：2026年6月2日 · 运营方：乌鸦便利店工作室（Crow Mart Studio）</p>
+
+    <p>物时记（以下简称「本 App」）由 乌鸦便利店工作室 开发与运营。我们重视你的隐私。本政策说明本 App 如何处理信息。本 App 以本地记录家中物品与心愿为主，不运营用户账号体系，不向第三方出售你的个人数据。</p>
+
+    <h2>一、我们收集哪些信息</h2>
+    <p>本 App 不会要求你注册账号，也不会主动收集姓名、手机号、电子邮箱等身份信息。</p>
+    <p>你在本 App 中主动输入或生成的内容（例如家物名称、分类、日期、价格、备注、心愿清单、图标选择等）均保存在你的设备上，或由你自行选择同步至你的 iCloud 私有数据库。除下文所述的系统能力外，我们不会将上述内容上传至开发者自有服务器。</p>
+
+    <h2>二、数据存储位置</h2>
+    <ul>
+      <li><strong>本地存储</strong>：默认使用设备上的 SwiftData 数据库保存家物与心愿记录。</li>
+      <li><strong>可选 iCloud 同步</strong>：仅在你在「设置 → iCloud 同步」中主动开启，且设备已登录 iCloud 时，家物与心愿会通过 Apple 的 CloudKit 私有库在你的 Apple ID 关联设备间同步。数据存储在你的 iCloud 账户下，受 Apple 隐私政策约束，开发者无法读取其他用户的 iCloud 数据。</li>
+      <li><strong>小组件快照</strong>：为在桌面小组件显示摘要，本 App 会在设备本地的 App Group 共享区写入一份 JSON 快照（如待关注家物数量与名称摘要）。该文件仅用于本机主 App 与小组件扩展之间通信，不会上传至第三方服务器。</li>
+    </ul>
+
+    <h2>三、系统权限与可选功能</h2>
+    <ul>
+      <li><strong>通知</strong>：若你授权，本 App 仅在本地根据你设置的提醒规则调度系统通知，用于到期、闲置等提醒。通知内容来自你自己的记录，不经由我们的服务器转发。</li>
+      <li><strong>日历</strong>：若你使用「同步到系统日历」，本 App 会在你授权后，将家物相关日期写入系统日历中的「物时记」日历。是否授权、是否删除日历事件均由你在系统「日历」App 中控制。</li>
+      <li><strong>聚焦搜索（Spotlight）</strong>：本 App 可将家物名称索引到系统搜索，便于你从系统搜索快速打开对应记录。索引保存在本机。</li>
+      <li><strong>Apple 生态快速登记</strong>：该功能仅提供设备名称模板，由你手动填写购买日期并导入，不会连接 Apple ID，也不会自动拉取 Apple 购买记录。</li>
+    </ul>
+
+    <h2>四、导出、分享与备份</h2>
+    <p>你可随时在「设置 → 数据与隐私」导出 JSON 备份至自选位置，或从文件导入备份。导出、分享总览图、分享心愿清单等操作均由你主动触发；分享目标（如「文件」「信息」、其他 App）由你选择，本 App 不介入分享之后的传输路径。</p>
+
+    <h2>五、我们不会做什么</h2>
+    <ul>
+      <li>不出售、出租或以其他方式交易你的个人数据。</li>
+      <li>不嵌入第三方广告追踪 SDK，也不基于本 App 进行跨 App 广告画像。</li>
+      <li>不在开发者自有服务器上集中存储你的家物/心愿明细（本 App 当前无自建后端接口）。</li>
+      <li>不读取与你使用本 App 无关的通讯录、照片图库、精确位置等敏感权限（本 App 未申请此类权限）。</li>
+    </ul>
+
+    <h2>六、未成年人</h2>
+    <p>本 App 面向一般家庭用户。若你为未成年人，请在监护人同意与指导下使用，并由监护人协助管理设备与 iCloud 账户设置。</p>
+
+    <h2>七、数据安全与保留</h2>
+    <p>你可通过删除单条记录、归档、导出备份或删除本 App 来移除本地数据。开启 iCloud 同步时，相关数据亦受你在 iCloud 与设备上的管理操作影响。请妥善保管设备、备份文件及 Apple ID 账户安全。</p>
+
+    <h2>八、政策更新</h2>
+    <p>我们可能因功能变更或法律要求更新本政策。更新后的版本将在 App 内「设置」相关页面展示，并更新文首「最后更新」日期。重大变更时，我们会在 App 内以合理方式提示你查阅。</p>
+
+    <h2>九、联系我们</h2>
+    <p>如对本隐私政策有疑问，请通过 App Store 产品页面提供的开发者联系方式与我们沟通（乌鸦便利店工作室），或发送邮件至 <a href="mailto:crowmart.studio@icloud.com">crowmart.studio@icloud.com</a>。</p>
+
+    <footer>
+      <p>© 乌鸦便利店工作室 · 物时记 LifeCycleTracker</p>
+    </footer>
+  </main>
+</body>
+</html>
